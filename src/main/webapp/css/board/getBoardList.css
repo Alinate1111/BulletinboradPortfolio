@@ -1,0 +1,47 @@
+body { background-image: url('../../icons/getBoardListImg.avif'); background-size: cover;}
+#container { width: 1000px; margin: 0 auto;}
+h2 { text-align: center; font-size: 2em;}
+h2>a { text-decoration: none; color: #000;}
+h2>a:hover { text-decoration: underline; color: #8B5E3C;}
+/* 로그아웃 박스 */
+.box_top>div { display: inline-block; margin-bottom: 5px; margin-top: 50px;}
+.box_top>.box_left { float: left;}
+.box_top>.box_right { float: right; color: #fff;}
+.box_top .a_id { text-decoration: none; color: #fff; font-weight: bold;}
+.box_top .a_id:hover { text-decoration: underline; font-style: italic;}
+.box_top .a_logout, .box_top .a_insert { text-decoration: none; color: #fff;}
+.box_top .a_logout:hover, .box_top .a_insert:hover { text-decoration: underline; font-weight: bold;}
+/* 검색 박스 */
+.box_2 .box_left { clear: both; float: left; margin-bottom: 15px; color: #fff;}
+.box_2 .box_right { float: right;}
+.box_2 .box_right #searchCondition { width: 110px; height: 28px;}
+.box_2 .box_right #searchKeyword { width: 200px; height: 22px;}
+.box_2 .box_right #btnSearch { width: 75px; height: 30px; border: none; background-color: #8B5E3C;
+	border-radius: 5px; cursor: pointer; color: #fff; font-weight: bold;}
+.box_2 .box_right #btnSearch:hover { box-shadow: 0 0 2px 2px #D19F6A;}
+/* 본문 */
+.clear { clear: both;}
+table { width: 100%; border: 1px solid black; border-collapse: collapse; background-color: rgba(211, 211, 211, 0.7);}
+tr { height: 40px;}
+th { background-color: #8B5E3C;}
+th, td { border: 1px solid black;}
+td{ color: #4B2C20;}
+.row_zero { text-align: center;}
+.center { text-align: center;}
+.left { padding-left: 10px;}
+.left>img { float: left; margin-left: 10px;}
+.left>a { text-decoration: none; color: #000; float: left; margin-left: 10px;}
+.left>a:hover { text-decoration: underline; text-shadow: 1px 1px 1px cyan;}
+/* 페이징 */
+.paging { margin-top: 10px; display: flex; justify-content: center;}
+.paging a { text-decoration: none; align-content: center;}
+.paging .p_box { display: inline-block; width: 20px; height: 20px; margin: 5px;
+	border: 2px solid #8B5E3C; padding: 5px; font-size: 0.8em; color: #8B5E3C; border-radius: 8px; 
+	text-align: center; line-height: 20px;}
+.paging .p_box:hover { border: 2px solid #8B5E3C; background-color: #8B5E3C; color: white; font-weight: bold;}
+.paging .a_box { border: 2px solid #8B5E3C; background-color: #8B5E3C; color: white; font-weight: bold;}
+.paging .a_img { width: 25px; height: 25px; margin: 0 5px; line-height: 25px;}
+.paging .a_start:hover { content: url(../../icons/arrow_start1.png);}
+.paging .a_end:hover { content: url(../../icons/arrow_end1.png);}
+.paging .a_prev:hover { content: url(../../icons/arrow_prev1.png);}
+.paging .a_next:hover { content: url(../../icons/arrow_next1.png);}

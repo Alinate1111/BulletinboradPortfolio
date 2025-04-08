@@ -1,0 +1,18 @@
+#container { width: 600px; margin: 0 auto;}
+h2 { text-align: center;}
+.box { text-align: right; margin-bottom: 10px;}
+.box>a { text-decoration: none; color: blue;}
+.box>a:hover { text-decoration: underline; font-weight: bold;}
+table { width: 100%; border: 1px solid black; border-collapse: collapse;}
+tr { height: 50px;}
+tr:nth-child(4) { height: 400px;}
+th, td { border: 1px solid black;}
+th { width: 15%;}
+td { width: 85%; padding-left: 5px;}
+table input { margin-left: 5px; padding-left: 5px; width: 470px; height: 25px;}
+table #writer { background-color: #eee;}
+table textarea { padding-left: 5px; margin: 10px 0;}
+.btns { text-align: center;}
+.btns>input { width: 110px; height: 40px; background-color: #000; color: #fff;
+	border: none; border-radius: 5px; font-weight: bold; margin: 10px 30px 0; cursor: pointer;}
+.btns>input:hover { box-shadow: 0 0 3px 3px ligthgray;}

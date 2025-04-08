@@ -1,0 +1,21 @@
+body { background-image: url('../../icons/food_img.jpg'); background-size: cover;}
+#container { width: 450px; margin: 20px auto;}
+h2, p { text-align: center;}
+h2 { font-size: 2em; font-weight: bold; text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5), 0 0 25px rgba(0, 0, 0, 0.2), 0 0 5px rgba(0, 0, 0, 0.1);}
+p { color: #fef;}
+/* 회원 폼 */ 
+#loginForm { border: 1px solid #000; padding: 20px; margin-top: 100px; background-color: rgba(0, 0, 0, 0.3);}
+.box { margin: 15px 0;}
+.box>label { width: 100px; display: inline-block; margin-left: 20px; color: white;}
+.box>input { width: 200px; height: 25px; padding-left: 5px;}
+.btns { text-align: center; margin-top: 30px; margin-bottom: 0;}
+.btns>input { width: 150px; height: 45px; background-color: #000; color: #fff; font-size: 1.05em;
+	border: none; border-radius: 5px; font-weight: bold; margin: 10px 30px 0; cursor: pointer;}
+.btns>input:hover { box-shadow: 0 0 3px 3px ligthgray;}
+/* 쿠키 */
+.cookie { text-align: center; margin-top: 30px; margin-bottom: 0; display: flex; align-items: center;}
+.cookie>input { width: 14px; height: 14px; cursor: pointer;}
+.cookie>label { width: 90px; display: inline-block; margin-right: 25px; cursor: pointer;}
+.cookie>label:hover { font-weight: bold;}
+.cookie>a { margin-left: 100px; color: white; text-decoration: none;}
+.cookie>a:hover { text-decoration: underline; font-weight: bold;}

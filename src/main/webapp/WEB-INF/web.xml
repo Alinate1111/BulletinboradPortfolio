@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>MemberBoard_v3</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <!-- MemberInsertController 매핑 -->
+  <servlet>
+  	<servlet-name>MemberInsertProController</servlet-name>
+  	<servlet-class>controller.MemberInsertProController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberInsertProController</servlet-name>
+  	<url-pattern>/member/insertMemberPro.do</url-pattern>
+  </servlet-mapping> 
+  
+  <!-- MemberLoginController 매핑 -->
+  <servlet>
+  	<servlet-name>MemberLoginController</servlet-name>
+  	<servlet-class>controller.MemberLoginController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberLoginController</servlet-name>
+  	<url-pattern>/member/loginMember.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- MemberLogoutController 매핑 -->
+  <servlet>
+  	<servlet-name>MemberLogoutController</servlet-name>
+  	<servlet-class>controller.MemberLogoutController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberLogoutController</servlet-name>
+  	<url-pattern>/member/logoutMember.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- MemberSelectOneController 매핑 -->
+  <servlet>
+  	<servlet-name>MemberSelectOneController</servlet-name>
+  	<servlet-class>controller.MemberSelectOneController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberSelectOneController</servlet-name>
+  	<url-pattern>/member/selectMemberOne.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- MemberUpdateFormController 매핑 -->
+  <servlet>
+  	<servlet-name>MemberUpdateFormController</servlet-name>
+  	<servlet-class>controller.MemberUpdateFormController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberUpdateFormController</servlet-name>
+  	<url-pattern>/member/updateMemberForm.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- MemberUpdateProController 매핑 -->
+  <servlet>
+  	<servlet-name>MemberUpdateProController</servlet-name>
+  	<servlet-class>controller.MemberUpdateProController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberUpdateProController</servlet-name>
+  	<url-pattern>/member/updateMemberPro.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- MemberDeleteFormController 매핑 -->
+  <servlet>
+  	<servlet-name>MemberDeleteFormController</servlet-name>
+  	<servlet-class>controller.MemberDeleteFormController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberDeleteFormController</servlet-name>
+  	<url-pattern>/member/deleteMemberForm.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- MemberDeleteProController 매핑 -->
+  <servlet>
+  	<servlet-name>MemberDeleteProController</servlet-name>
+  	<servlet-class>controller.MemberDeleteProController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberDeleteProController</servlet-name>
+  	<url-pattern>/member/deleteMemberPro.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- MemberCheckIdController 매핑 -->
+  <servlet>
+  	<servlet-name>MemberCheckIdController</servlet-name>
+  	<servlet-class>controller.MemberCheckIdController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>MemberCheckIdController</servlet-name>
+  	<url-pattern>/member/checkMemberId.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ################################################################################ -->
+  <!-- BoardInsertFormController 매핑 -->
+  <servlet>
+  	<servlet-name>BoardInsertFormController</servlet-name>
+  	<servlet-class>controller.BoardInsertFormController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BoardInsertFormController</servlet-name>
+  	<url-pattern>/board/insertBoardForm.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- BoardInsertProController 매핑 -->
+  <servlet>
+  	<servlet-name>BoardInsertProController</servlet-name>
+  	<servlet-class>controller.BoardInsertProController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BoardInsertProController</servlet-name>
+  	<url-pattern>/board/insertBoardPro.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- BoardController 매핑 -->
+  <servlet>
+  	<servlet-name>BoardController</servlet-name>
+  	<servlet-class>controller.BoardController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BoardController</servlet-name>
+  	<url-pattern>/board/getBoard.do</url-pattern>
+  </servlet-mapping>
+  
+   <!-- BoardListController 매핑 -->
+  <servlet>
+  	<servlet-name>BoardListController</servlet-name>
+  	<servlet-class>controller.BoardListController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BoardListController</servlet-name>
+  	<url-pattern>/board/getBoardList.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- BoardSearchController 매핑 -->
+  <servlet>
+  	<servlet-name>BoardSearchController</servlet-name>
+  	<servlet-class>controller.BoardSearchController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BoardSearchController</servlet-name>
+  	<url-pattern>/board/searchBoardPro.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- BoardUpdateFormController 매핑 -->
+  <servlet>
+  	<servlet-name>BoardUpdateFormController</servlet-name>
+  	<servlet-class>controller.BoardUpdateFormController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BoardUpdateFormController</servlet-name>
+  	<url-pattern>/board/updateBoardForm.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- BoardUpdateProController 매핑 -->
+  <servlet>
+  	<servlet-name>BoardUpdateProController</servlet-name>
+  	<servlet-class>controller.BoardUpdateProController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BoardUpdateProController</servlet-name>
+  	<url-pattern>/board/updateBoardPro.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- BoardDeleteProController 매핑 -->
+  <servlet>
+  	<servlet-name>BoardDeleteProController</servlet-name>
+  	<servlet-class>controller.BoardDeleteProController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BoardDeleteProController</servlet-name>
+  	<url-pattern>/board/deleteBoardPro.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- BoardReplyFormController 매핑 -->
+  <servlet>
+  	<servlet-name>BoardReplyFormController</servlet-name>
+  	<servlet-class>controller.BoardReplyFormController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BoardReplyFormController</servlet-name>
+  	<url-pattern>/board/replyBoardForm.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- BoardReplyProController 매핑 -->
+  <servlet>
+  	<servlet-name>BoardReplyProController</servlet-name>
+  	<servlet-class>controller.BoardReplyProController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BoardReplyProController</servlet-name>
+  	<url-pattern>/board/replyBoardPro.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- BoardIncreaseRecommController 매핑 -->
+  <servlet>
+  	<servlet-name>BoardIncreaseRecommController</servlet-name>
+  	<servlet-class>controller.BoardIncreaseRecommController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>BoardIncreaseRecommController</servlet-name>
+  	<url-pattern>/board/increaseRecomm.do</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</web-app>

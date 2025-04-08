@@ -1,0 +1,16 @@
+#container { width: 600px; margin: 0 auto;}
+h2 { text-align: center;}
+.box { text-align: right; margin-bottom: 10px;}
+.box>a { text-decoration: none; color: blue;}
+.box>a:hover { text-decoration: underline; font-weight: bold;}
+table { width: 100%; border: 1px solid black; border-collapse: collapse;}
+tr { height: 50px;}
+tr:nth-child(4) { height: 350px;}
+th, td { border: 1px solid black;}
+th { width: 15%;}
+td { width: 85%; padding-left: 5px;}
+.btns { display: flex; align-items: center; margin: 20px 0 0 140px;}
+.btns>#btnBoardList, .btns>#btnReply { width: 110px; height: 40px; background-color: #000; color: #fff;
+	border: none; border-radius: 5px; font-weight: bold; cursor: pointer; margin-right: 20px;}
+.btns>#btnBoardList:hover, .btns>#btnReply:hover { box-shadow: 0 0 3px 3px ligthgray;}
+.btns>#btnRecomm { height: 40px; margin-left: 20px; margin-top: -5px;}
